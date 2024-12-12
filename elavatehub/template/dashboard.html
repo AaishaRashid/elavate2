@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ElevateHub</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <style>
+        /* Body Styling */
+        body {
+            background: url('{% static "images/dashboard-bg.jpg" %}') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #002855; /* Dark Blue */
+        }
+
+        .navbar-brand, .nav-link {
+            color: #FFD700; /* Gold */
+        }
+
+        .navbar-brand:hover, .nav-link:hover {
+            color: #FFF;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: rgba(0, 40, 85, 0.8); /* Transparent overlay */
+            color: #FFD700; /* Gold */
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        /* Sections */
+        .section {
+            margin-top: 30px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #002855, #0056D2); /* Gradient */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #003E99, #001E57);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ElevateHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mentors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">IdeaFeed</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Your Dashboard</h1>
+        <p>Your hub for connecting, sharing ideas, and growing together.</p>
+    </div>
+
+    <!-- Content Sections -->
+    <div class="container section">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Posts</h5>
+                        <p class="card-text">View and share your latest posts with the community.</p>
+                        <a href="#" class="btn btn-primary">Explore Posts</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Mentors</h5>
+                        <p class="card-text">Connect with active mentors ready to guide you.</p>
+                        <a href="#" class="btn btn-primary">View Mentors</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">IdeaFeed</h5>
+                        <p class="card-text">Share and discover innovative ideas from others.</p>
+                        <a href="#" class="btn btn-primary">Visit IdeaFeed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

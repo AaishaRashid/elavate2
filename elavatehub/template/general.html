@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - ElevateHub</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #0056D2;
+        }
+        .navbar-brand, .nav-link {
+            color: #FFD700 !important;
+        }
+        .profile-header {
+            background-color: #0056D2;
+            color: #FFD700;
+            padding: 30px;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .card-title {
+            color: #0056D2;
+        }
+        .btn-primary {
+            background-color: #FFD700;
+            border: none;
+            color: #0056D2;
+        }
+        .btn-primary:hover {
+            background-color: #FFC107;
+        }
+        footer {
+            background-color: #0056D2;
+            color: #FFD700;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">ElevateHub</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Posts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mentors</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Page Header -->
+    <div class="profile-header">
+        <h2>User Profile</h2>
+        <p class="lead">Learn, Innovate, and Grow with ElevateHub</p>
+    </div>
+
+    <!-- User Profile Information -->
+    <div class="container">
+        <div class="row">
+            <!-- Profile Picture -->
+            <div class="col-md-4 text-center">
+                <img src="https://via.placeholder.com/150" class="img-fluid rounded-circle" alt="Profile Picture">
+            </div>
+
+            <!-- Profile Details -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">About Me</h5>
+                        <p class="card-text">Hi, I’m a passionate entrepreneur. I focus on developing green energy solutions for communities in need.</p>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Business Idea</h5>
+                        <p class="card-text">I work on building solar-powered systems to provide sustainable energy to rural areas. My goal is to help reduce energy poverty.</p>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Funding Needed</h5>
+                        <p class="card-text">I am seeking funding to help purchase more solar panels and expand my operations.</p>
+                        <!-- Fund Button -->
+                        <a href="#" class="btn btn-primary w-100">Fund This Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 ElevateHub. All Rights Reserved.</p>
+        <p>Follow us:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

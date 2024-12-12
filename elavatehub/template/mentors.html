@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentors - ElevateHub</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <style>
+        body {
+            background-color: #f1f5f9; /* Light background */
+        }
+        .navbar {
+            background-color: #003366; /* Deep blue */
+        }
+        .navbar-brand, .nav-link {
+            color: #FFD700 !important; /* Gold */
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #FFC107; /* Lighter gold */
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-title {
+            color: #003366; /* Deep blue */
+        }
+        .btn-primary {
+            background-color: #082042;
+            border: none;
+            color: #f5f2f8; /* Deep blue */
+        }
+        .btn-primary:hover {
+            background-color: #FFC107;
+        }
+        footer {
+            background-color: #003366;
+            color: #FFD700;
+        }
+        footer a {
+            color: #FFD700;
+        }
+        footer a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">ElevateHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/posts">Posts</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/mentors">Mentors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/idea">Idea Feed</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mentors Section -->
+    <div class="container my-5">
+        <h2 class="text-center text-primary mb-4">Meet Our Mentors</h2>
+        <div class="row">
+            <!-- Mentor 1 -->
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="{% static 'images/mentor1.jpg' %}" class="card-img-top" alt="Mentor 1">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text">Specialization: Business Development</p>
+                        <a href="#" class="btn btn-primary w-100">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mentor 2 -->
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="{% static 'images/mentor2.jpg' %}" class="card-img-top" alt="Mentor 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="card-text">Specialization: Marketing Strategies</p>
+                        <a href="#" class="btn btn-primary w-100">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mentor 3 -->
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="{% static 'images/mentor3.jpg' %}" class="card-img-top" alt="Mentor 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Alice Johnson</h5>
+                        <p class="card-text">Specialization: Technology Innovations</p>
+                        <a href="#" class="btn btn-primary w-100">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mentor 4 -->
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="{% static 'images/mentor4.jpg' %}" class="card-img-top" alt="Mentor 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Michael Brown</h5>
+                        <p class="card-text">Specialization: Data Science</p>
+                        <a href="#" class="btn btn-primary w-100">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mentor 5 -->
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="{% static 'images/mentor5.jpg' %}" class="card-img-top" alt="Mentor 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah Lee</h5>
+                        <p class="card-text">Specialization: Financial Planning</p>
+                        <a href="#" class="btn btn-primary w-100">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mentor 6 -->
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="{% static 'images/mentor6.jpg' %}" class="card-img-top" alt="Mentor 6">
+                    <div class="card-body">
+                        <h5 class="card-title">David Williams</h5>
+                        <p class="card-text">Specialization: Entrepreneurship</p>
+                        <a href="#" class="btn btn-primary w-100">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3">
+        <div class="container text-center">
+            <p>© 2024 ElevateHub. All Rights Reserved.</p>
+            <p>Follow us:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
